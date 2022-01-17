@@ -1,0 +1,116 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #8491A3;
+    position: relative;
+    border: 5px solid red;
+    height: 100vh;
+}
+
+h1{
+    /* border: 2px solid green; */
+    margin: 5px 0 0;
+    text-align: center;
+    color: white;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+    background-color: #87D68D;
+    border-style: none;
+    border-radius: 5px;
+
+}
+
+.addbtn{
+    font-size: x-large;
+    margin-bottom: 0;
+    text-align: center;
+   }
+
+   table{
+       /* border: 3px solid green; */
+       margin: 0 auto 10px;
+       background-color: #5584AC;
+       color: white;
+       border-collapse: collapse;
+   }
+
+th,td{
+    border: 2px solid black;
+    padding: 15px;
+    font-size: large;
+}
+
+td{
+    text-align: left;
+}
+
+.updellink{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+label {
+    /* Other styling... */
+    text-align: left;
+    clear: both;
+    float:left;
+    margin-right:15px;
+}
+
+label, input{
+    margin: 5px;
+    padding: 10px;
+}
+
+  .popup{
+    display: none    
+
+  }  /* display: none */    
+
+
+input{
+    outline: none;
+    border: none;    
+    background-color: #0076ff;
+    color: white;
+    float: right;   
+       
+}
+
+input::placeholder{
+    color: white;
+    }
+
+.userform{
+    border: 2px solid white;
+    padding: 10px;
+    background-color: #00bfff;  
+    position: absolute;
+    top:0; 
+    left: 38%;
+    
+   
+}
+
+.userform button{
+    background-color:red;
+    display: block;   
+    width: 150px;
+    margin-left: auto; 
+   }
+div{
+    /* border: 5px solid green; */
+    position: static;
+    margin-top: 60px;
+    
+    
+}

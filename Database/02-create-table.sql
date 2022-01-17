@@ -1,0 +1,8 @@
+CREATE TABLE user_info (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    fname VARCHAR(200) NOT NULL,
+    mname VARCHAR(200),
+    lname VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    phone INT NOT NULL
+);

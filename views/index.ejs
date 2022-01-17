@@ -1,0 +1,40 @@
+<%- include('./partials/head') -%>
+<body>
+    <h1>User Information</h1>
+    <button class='addbtn' onclick="popUp()">Add New User</button>    
+    <br/>
+    <br>
+    <table>
+        <tr>
+            <td>S.N</td>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th colspan="2"> Function </th>
+        </tr>
+        <% userdetails.forEach((user,index)=>{ %>
+        <tr>
+            <td><%= index+1 %></td>
+            <td><%= user.fname %></td>
+            <td><%= user.mname %></td>
+            <td><%= user.lname %></td>
+            <td><%= user.email %></td>
+            <td><%= user.phone %></td>
+            <td> <a class='updellink' href="/updateuser/<%= user.id %>"> Update </a> </td>
+            <td> <a class='updellink' href="/deleteuser/<%= user.id %>">Delete</a> </td>
+        </tr>
+        <% }) %>
+    </table>
+
+    <div id="popupForm" class="popup userform">
+        <form action="/adduser" method="post">
+          <%- include("./partials/user-form") -%>
+        </form>
+        
+    </div>
+  <script src="javascript/main.js"></script>
+
+</body>
+</html>
